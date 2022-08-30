@@ -118,7 +118,7 @@ const Homepage1 = () => {
     <Box>
       <Navbar />
       <Box className="blue-box ">
-        <Box className="blue-shape _11" display={{ base:"none"}}></Box>
+        <Box className="blue-shape _11" ></Box>
       </Box>
 
       

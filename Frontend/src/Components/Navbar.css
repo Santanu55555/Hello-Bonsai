@@ -20,7 +20,7 @@ position:absolute;
     background-color: #f2faff;
     -webkit-transform: rotate(-23deg);
     -ms-transform: rotate(-23deg);
-    transform: rotate(-23deg);
+    transform: rotate(250deg);
 }
 
 
@@ -59,7 +59,7 @@ body{
         background-color: #fff5e8;
         -webkit-transform: rotate(-21deg);
         -ms-transform: rotate(-21deg);
-        transform: rotate(-21deg);
+        transform: rotate(250deg);
     }
     .right-shape.home {
        
