@@ -57,6 +57,7 @@ export const Navbar = () => {
         setDat(data[0]);
       });
     }
+    
     var dusra = document.getElementById("dusra");
     if (dusra) {
       dusra.addEventListener("mouseover", () => {
@@ -185,17 +186,18 @@ export const Navbar = () => {
               </Stack>
             </Box>
           ) : null}
+
           <Spacer display={{ md: "none" }} />
           <Spacer display={{ md: "none" }} />
           <Spacer display={{ md: "none" }} />
           <Box m="auto" display={{ base: "none", md: "flex" }}>
-            <Image
+          <LoginLink to="/" >  <Image
               p="5%"
               mb="7%"
               w="75%"
               src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg"
               alt="Logo"
-            />
+            /></LoginLink>
           </Box>
           <Flex
             m="auto"
