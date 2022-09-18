@@ -18,6 +18,7 @@ import { Link as RouterLink } from "react-router-dom";
 import "./Navbar.css";
 import data from "./data.json";
 import { ComponentModel } from "./ComponentModel";
+import {Link as Routerlink} from "react-router-dom";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 export const Navbar = () => {
   const [dat, setDat] = useState([{}]);
@@ -290,7 +291,7 @@ export const Navbar = () => {
               color="white"
               w="50%"
             >
-              Start Free
+             <Routerlink to="/signup"> Start Free</Routerlink>
             </Button>
           </Box>
         </Box>

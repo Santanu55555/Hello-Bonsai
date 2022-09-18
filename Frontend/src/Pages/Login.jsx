@@ -198,7 +198,7 @@ export default function SimpleCard() {
             <Link marginTop="100px" color={"#00B289"}>
               Reset password?
             </Link>
-            <Link marginTop="100px" color={"blue"} onClick={handleSignup}>
+            <Link marginTop="100px"ml="10px" color={"teal.500"} onClick={handleSignup}>
               SignUp
             </Link>
 

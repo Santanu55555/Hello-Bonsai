@@ -20,6 +20,7 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import {Link as Routerlink} from "react-router-dom";
 import { Footer } from "../Components/Footer";
 
 const Homepage1 = () => {
@@ -159,7 +160,7 @@ const Homepage1 = () => {
                 w="12rem"
                 onClick={handleClick}
               >
-                START FREE
+                <Routerlink to="/signup"> Start Free</Routerlink>
               </Button>
             </InputGroup>
           </Box>
@@ -613,7 +614,7 @@ const Homepage1 = () => {
                 }}
                 color="white"
               >
-                Start Free
+                  <Routerlink to="/signup"> Start Free</Routerlink>
               </Button>
               <Button  display={{ base: 'flex',md:"none" }}
                 background="#00b289" p="auto" h="30px" w="40px"
@@ -623,7 +624,7 @@ const Homepage1 = () => {
                 }}
                 color="white"
               >
-                Start 
+                 <Routerlink to="/signup"> Start</Routerlink>
               </Button>
             </Box>
           </Flex>
