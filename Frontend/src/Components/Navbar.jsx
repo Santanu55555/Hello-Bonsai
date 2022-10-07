@@ -18,7 +18,6 @@ import { Link as RouterLink } from "react-router-dom";
 import "./Navbar.css";
 import data from "./data.json";
 import { ComponentModel } from "./ComponentModel";
-import {Link as Routerlink} from "react-router-dom";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 export const Navbar = () => {
   const [dat, setDat] = useState([{}]);
@@ -58,7 +57,6 @@ export const Navbar = () => {
         setDat(data[0]);
       });
     }
-    
     var dusra = document.getElementById("dusra");
     if (dusra) {
       dusra.addEventListener("mouseover", () => {
@@ -187,18 +185,17 @@ export const Navbar = () => {
               </Stack>
             </Box>
           ) : null}
-
           <Spacer display={{ md: "none" }} />
           <Spacer display={{ md: "none" }} />
           <Spacer display={{ md: "none" }} />
           <Box m="auto" display={{ base: "none", md: "flex" }}>
-          <LoginLink to="/" >  <Image
+            <Image
               p="5%"
               mb="7%"
               w="75%"
               src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg"
               alt="Logo"
-            /></LoginLink>
+            />
           </Box>
           <Flex
             m="auto"
@@ -291,7 +288,7 @@ export const Navbar = () => {
               color="white"
               w="50%"
             >
-             <Routerlink to="/signup"> Start Free</Routerlink>
+              Start Free
             </Button>
           </Box>
         </Box>
