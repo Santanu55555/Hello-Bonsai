@@ -12,7 +12,7 @@ import {
   useDisclosure,
   useWhyDidYouUpdate,
 } from "@chakra-ui/react";
-import { Link as LoginLink } from "react-router-dom";
+import { Link as LoginLink, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import "./Navbar.css";
@@ -23,6 +23,7 @@ export const Navbar = () => {
   const [dat, setDat] = useState([{}]);
   // setDat(data[0])
   // console.log(data)
+  const navigate= useNavigate()
   useEffect(() => {
     const toggleProductUp = (element) => {
       element.style.display = "block";
@@ -191,8 +192,8 @@ export const Navbar = () => {
           <Box m="auto" display={{ base: "none", md: "flex" }}>
             <Image
               p="5%"
-              mb="7%"
-              w="75%"
+              mb="7%" onClick={()=>navigate("/")}
+              w="75%" cursor={"pointer"}
               src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg"
               alt="Logo"
             />
